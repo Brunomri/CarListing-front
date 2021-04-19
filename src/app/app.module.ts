@@ -11,13 +11,17 @@ import { NavComponent } from './components/templates/nav/nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {RouterModule} from '@angular/router';
 import {MatListModule} from '@angular/material/list';
+import { HomeComponent } from './components/templates/views/home/home.component';
+import {MatCardModule} from '@angular/material/card';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +30,8 @@ import {MatListModule} from '@angular/material/list';
     MatSidenavModule,
     RouterModule,
     MatListModule,
+    MatCardModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

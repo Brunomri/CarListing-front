@@ -2,6 +2,10 @@
   <mat-sidenav mode="side" opened class="sideMenu">
     <mat-nav-list>
       <a mat-list-item class="menuItem">
+        <i class="material-icons">home</i>
+        Home
+      </a>
+      <a mat-list-item class="menuItem">
         <i class="material-icons">menu_book</i>
         Cars
       </a>
@@ -12,6 +16,6 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    Main content
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

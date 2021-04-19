@@ -1,0 +1,27 @@
+.home {
+  width: 95%;
+  margin: 1rem auto;
+}
+
+@media(max-width: 450px) {
+  .home {
+    width: 70%;
+  }
+}
+
+@media(max-width: 770px) {
+  .home {
+    width: 90%;
+  }
+}
+
+.title {
+  font-family: 'Dosis', sans-serif;
+  font-size: 2rem;
+  padding-bottom: .2rem;
+}
+
+.subtitle {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1rem;
+}
