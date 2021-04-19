@@ -15,6 +15,33 @@
   font-family: 'Dosis', sans-serif;
 }
 
+.mat-stroked-button {
+  margin-bottom: .8rem;
+  background-color: white;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid silver;
+  transition-duration: 0.4s;
+}
+
+.mat-stroked-button:hover {
+  background-color: silver;
+}
+
 .table {
   width: 100%;
+}
+
+.edit {
+  color: darkseagreen;
+}
+
+.delete {
+  color: indianred;
+  margin-left: .5rem;
+}
+
+.mat-header {
+  width: 5rem;
 }

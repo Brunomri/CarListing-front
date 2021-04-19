@@ -15,6 +15,7 @@ import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './components/views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { CarsReadComponent } from './components/views/cars/cars-read/cars-read.component';
 
@@ -36,6 +37,7 @@ import { CarsReadComponent } from './components/views/cars/cars-read/cars-read.c
     MatListModule,
     MatCardModule,
     MatTableModule,
+    MatButtonModule,
     AppRoutingModule,
     HttpClientModule
   ],
