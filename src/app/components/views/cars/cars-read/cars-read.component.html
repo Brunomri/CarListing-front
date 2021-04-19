@@ -1,0 +1,38 @@
+<div class="content">
+  <div class="title">
+    <h1>Cars</h1>
+  </div>
+
+  <div class="mat-elevation-z8 content-table">
+    <table class="table" mat-table>
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="carId">
+        <th mat-header-cell *matHeaderCellDef> Car ID </th>
+        <td mat-cell *matCellDef="let element"> {{row.carId}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="make">
+        <th mat-header-cell *matHeaderCellDef> Make </th>
+        <td mat-cell *matCellDef="let element"> {{row.make}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="model">
+        <th mat-header-cell *matHeaderCellDef> Model </th>
+        <td mat-cell *matCellDef="let element"> {{row.model}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef> Actions </th>
+        <td mat-cell *matCellDef="let element"> {{row.actions}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+  </div>
+
+</div>

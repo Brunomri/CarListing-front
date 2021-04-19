@@ -11,9 +11,11 @@ import { NavComponent } from './components/templates/nav/nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {RouterModule} from '@angular/router';
 import {MatListModule} from '@angular/material/list';
-import { HomeComponent } from './components/templates/views/home/home.component';
+import { HomeComponent } from './components/views/home/home.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
 import { AppRoutingModule } from './app-routing.module';
+import { CarsReadComponent } from './components/views/cars/cars-read/cars-read.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { AppRoutingModule } from './app-routing.module';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    CarsReadComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { AppRoutingModule } from './app-routing.module';
     RouterModule,
     MatListModule,
     MatCardModule,
+    MatTableModule,
     AppRoutingModule,
   ],
   providers: [],
