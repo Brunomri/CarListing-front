@@ -1,0 +1,16 @@
+.container {
+  height: 85%;
+}
+
+i {
+  padding-right: .6rem;
+}
+
+.sideMenu {
+  background-color: silver;
+}
+
+.menuItem {
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5rem;
+}
