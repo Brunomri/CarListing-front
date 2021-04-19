@@ -1,10 +1,11 @@
 img {
-  height: 6rem;
+  height: 4rem;
 }
 
 .header {
   justify-content: left;
   height: 10%;
+  background-color: cadetblue;
 }
 
 .span {
@@ -14,5 +15,6 @@ img {
 
 h1 {
   padding-left: .5rem;
-  font-size: 2.0rem;
+  font-size: 2.5rem;
+  font-family: 'Dosis', sans-serif;
 }
