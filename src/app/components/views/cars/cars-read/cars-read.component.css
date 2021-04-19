@@ -10,8 +10,9 @@
 
 .title h1 {
   font-size: 2rem;
-  color: silver;
-  font-weight: 500;
+  /*color: silver;*/
+  /*font-weight: 500;*/
+  font-family: 'Dosis', sans-serif;
 }
 
 .table {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CarsService} from '../cars.service';
+import {CarsModel} from '../cars.model';
 
 @Component({
   selector: 'app-cars-read',
@@ -7,11 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsReadComponent implements OnInit {
 
-  constructor() { }
+  cars: CarsModel[] = [];
 
-  displayedColumns: string[] = ['carId', 'make', 'model', 'actions'];
-  row: any;
+  displayedColumns: string[] = ['carId', 'make', 'model', 'year', 'trim', 'color', 'transmission', 'fuel', 'actions'];
+
+  constructor(private service: CarsService) { }
 
   ngOnInit(): void {
+    this.findAllCars();
+  }
+
+  findAllCars(): void {
+    this.service.findAllCars().subscribe(response => {
+      console.log(response);
+      this.cars = response;
+    });
   }
 }

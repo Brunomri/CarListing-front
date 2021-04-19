@@ -4,30 +4,51 @@
   </div>
 
   <div class="mat-elevation-z8 content-table">
-    <table class="table" mat-table>
+    <table class="table" mat-table [dataSource]="cars['content']">
 
-      <!-- Position Column -->
       <ng-container matColumnDef="carId">
         <th mat-header-cell *matHeaderCellDef> Car ID </th>
-        <td mat-cell *matCellDef="let element"> {{row.carId}} </td>
+        <td mat-cell *matCellDef="let row"> {{row.carId}} </td>
       </ng-container>
 
-      <!-- Name Column -->
       <ng-container matColumnDef="make">
         <th mat-header-cell *matHeaderCellDef> Make </th>
-        <td mat-cell *matCellDef="let element"> {{row.make}} </td>
+        <td mat-cell *matCellDef="let row"> {{row.make}} </td>
       </ng-container>
 
-      <!-- Weight Column -->
       <ng-container matColumnDef="model">
         <th mat-header-cell *matHeaderCellDef> Model </th>
-        <td mat-cell *matCellDef="let element"> {{row.model}} </td>
+        <td mat-cell *matCellDef="let row"> {{row.model}} </td>
       </ng-container>
 
-      <!-- Symbol Column -->
+      <ng-container matColumnDef="year">
+        <th mat-header-cell *matHeaderCellDef> Year </th>
+        <td mat-cell *matCellDef="let row"> {{row.year}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="trim">
+        <th mat-header-cell *matHeaderCellDef> Trim </th>
+        <td mat-cell *matCellDef="let row"> {{row.trim}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="color">
+        <th mat-header-cell *matHeaderCellDef> Color </th>
+        <td mat-cell *matCellDef="let row"> {{row.color}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="transmission">
+        <th mat-header-cell *matHeaderCellDef> Transmission </th>
+        <td mat-cell *matCellDef="let row"> {{row.transmission}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fuel">
+        <th mat-header-cell *matHeaderCellDef> Fuel </th>
+        <td mat-cell *matCellDef="let row"> {{row.fuel}} </td>
+      </ng-container>
+
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Actions </th>
-        <td mat-cell *matCellDef="let element"> {{row.actions}} </td>
+        <td mat-cell *matCellDef="let row">  </td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
