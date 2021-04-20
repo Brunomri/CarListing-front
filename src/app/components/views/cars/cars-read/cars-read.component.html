@@ -3,7 +3,7 @@
     <h1>Cars</h1>
   </div>
 
-  <button class="mat-elevation-z8" mat-stroked-button color="primary">New Car</button>
+  <button class="mat-elevation-z8" (click)="goToCarsCreate()" mat-stroked-button color="primary">New Car</button>
 
   <div class="mat-elevation-z8 content-table">
     <table class="table" mat-table [dataSource]="cars['content']">

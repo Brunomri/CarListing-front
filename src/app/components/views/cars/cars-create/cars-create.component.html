@@ -1,0 +1,58 @@
+<form action="">
+  <h1>Create a new car</h1>
+
+  <mat-form-field class="form">
+    <mat-label>Make</mat-label>
+    <label>
+      <input matInput [(ngModel)]="car.make" type="text" name="make" placeholder="Make">
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Model</mat-label>
+    <label>
+      <input matInput [(ngModel)]="car.model" type="text" name="model" placeholder="Model">
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Year</mat-label>
+    <label>
+      <input matInput [(ngModel)]="car.year" type="text" name="year" placeholder="Year">
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Trim</mat-label>
+    <label>
+      <input matInput [(ngModel)]="car.trim" type="text" name="trim" placeholder="Trim">
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Color</mat-label>
+    <label>
+      <input matInput [(ngModel)]="car.color" type="text" name="color" placeholder="Color">
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Transmission</mat-label>
+    <label>
+      <input matInput [(ngModel)]="car.transmission" type="text" name="transmission" placeholder="Transmission">
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Fuel</mat-label>
+    <label>
+      <input matInput [(ngModel)]="car.fuel" type="text" name="fuel" placeholder="Fuel">
+    </label>
+  </mat-form-field>
+
+  <div class="buttons">
+    <button (click)="createCar()" class="mat-elevation-z8" mat-stroked-button color="primary">Create</button>
+    <button class="mat-elevation-z8" mat-stroked-button color="warn">Cancel</button>
+  </div>
+
+</form>
