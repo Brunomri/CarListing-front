@@ -24,6 +24,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CarsDeleteComponent } from './components/views/cars/cars-delete/cars-delete.component';
+import { CarsUpdateComponent } from './components/views/cars/cars-update/cars-update.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CarsDeleteComponent } from './components/views/cars/cars-delete/cars-de
     HomeComponent,
     CarsReadComponent,
     CarsCreateComponent,
-    CarsDeleteComponent
+    CarsDeleteComponent,
+    CarsUpdateComponent
   ],
   imports: [
     BrowserModule,

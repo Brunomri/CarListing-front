@@ -36,6 +36,11 @@ export class CarsService {
     return this.http.delete<void>(url);
   }
 
+  updateCar(car: CarsModel): Observable<void> {
+    const url = `${this.baseUrl}/cars/${car.carId}`;
+    return this.http.put<void>(url, car);
+  }
+
   message(str: string): void {
     this._snack.open(`${str}`, 'OK', {
       horizontalPosition: 'end',

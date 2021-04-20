@@ -21,7 +21,7 @@ export class CarsCreateComponent implements OnInit {
 
   createCar(): void {
     this.service.createCar(this.car).subscribe(() => {
-      console.log('New car created successfully:');
+      console.log('New car created:');
       console.log(this.car);
       this.router.navigate(['cars']);
       this.service.message('New car created!');

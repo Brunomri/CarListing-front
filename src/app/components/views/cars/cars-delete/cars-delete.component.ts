@@ -31,8 +31,10 @@ export class CarsDeleteComponent implements OnInit {
 
   deleteCar(): void {
     this.service.deleteCar(this.car.carId).subscribe(() => {
+      console.log('Car deleted:');
+      console.log(this.car);
       this.router.navigate(['cars']);
-      this.service.message('Car deleted successfully!');
+      this.service.message('Car deleted!');
     }, error => {
       this.service.message(error.error.error);
     });

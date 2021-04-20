@@ -4,6 +4,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {CarsReadComponent} from './components/views/cars/cars-read/cars-read.component';
 import {CarsCreateComponent} from './components/views/cars/cars-create/cars-create.component';
 import {CarsDeleteComponent} from './components/views/cars/cars-delete/cars-delete.component';
+import {CarsUpdateComponent} from './components/views/cars/cars-update/cars-update.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'cars/delete/:carId',
     component: CarsDeleteComponent
+  },
+  {
+    path: 'cars/update/:carId',
+    component: CarsUpdateComponent
   }
 ];
 
