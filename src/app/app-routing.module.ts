@@ -3,6 +3,7 @@ import {HomeComponent} from './components/views/home/home.component';
 import {RouterModule, Routes} from '@angular/router';
 import {CarsReadComponent} from './components/views/cars/cars-read/cars-read.component';
 import {CarsCreateComponent} from './components/views/cars/cars-create/cars-create.component';
+import {CarsDeleteComponent} from './components/views/cars/cars-delete/cars-delete.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'cars/create',
     component: CarsCreateComponent
+  },
+  {
+    path: 'cars/delete/:carId',
+    component: CarsDeleteComponent
   }
 ];
 

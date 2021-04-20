@@ -20,9 +20,20 @@ export class CarsService {
     return this.http.get<CarsModel[]>(url);
   }
 
+  findCarById(carId: number): Observable<CarsModel> {
+    console.log('carId = ' + carId);
+    const url = `${this.baseUrl}/cars/${carId}`;
+    return this.http.get<CarsModel>(url);
+  }
+
   createCar(car: CarsModel): Observable<CarsModel> {
     const url = `${this.baseUrl}/cars/1`;
     return this.http.post<CarsModel>(url, car);
+  }
+
+  deleteCar(carId: number): Observable<void> {
+    const url = `${this.baseUrl}/cars/${carId}`;
+    return this.http.delete<void>(url);
   }
 
   message(str: string): void {
