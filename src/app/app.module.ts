@@ -18,6 +18,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { CarsReadComponent } from './components/views/cars/cars-read/cars-read.component';
+import { CarsCreateComponent } from './components/views/cars/cars-create/cars-create.component';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -26,7 +31,8 @@ import { CarsReadComponent } from './components/views/cars/cars-read/cars-read.c
     FooterComponent,
     NavComponent,
     HomeComponent,
-    CarsReadComponent
+    CarsReadComponent,
+    CarsCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,11 @@ import { CarsReadComponent } from './components/views/cars/cars-read/cars-read.c
     MatTableModule,
     MatButtonModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
