@@ -19,13 +19,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { AppRoutingModule } from './app-routing.module';
 import { CarsReadComponent } from './components/views/cars/cars-read/cars-read.component';
 import { CarsCreateComponent } from './components/views/cars/cars-create/cars-create.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CarsDeleteComponent } from './components/views/cars/cars-delete/cars-delete.component';
 import { CarsUpdateComponent } from './components/views/cars/cars-update/cars-update.component';
 import { UsersReadAllComponent } from './components/views/users/users-read-all/users-read-all.component';
+import { UsersCreateComponent } from './components/views/users/users-create/users-create.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { UsersReadAllComponent } from './components/views/users/users-read-all/u
     CarsCreateComponent,
     CarsDeleteComponent,
     CarsUpdateComponent,
-    UsersReadAllComponent
+    UsersReadAllComponent,
+    UsersCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +57,8 @@ import { UsersReadAllComponent } from './components/views/users/users-read-all/u
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

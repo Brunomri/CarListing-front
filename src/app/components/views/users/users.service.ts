@@ -19,4 +19,17 @@ export class UsersService {
     const url = `${this.baseUrl}/users`;
     return this.http.get<UsersModel[]>(url);
   }
+
+  createUser(user: UsersModel): Observable<UsersModel> {
+    const url = `${this.baseUrl}/users/1`;
+    return this.http.post<UsersModel>(url, user);
+  }
+
+  message(str: string): void {
+    this._snack.open(`${str}`, 'OK', {
+      horizontalPosition: 'end',
+      verticalPosition: 'top',
+      duration: 3000
+    });
+  }
 }
