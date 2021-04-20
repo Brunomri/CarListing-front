@@ -31,4 +31,8 @@ export class CarsCreateComponent implements OnInit {
       }
     });*/
   }
+
+  cancelCreate(): void {
+    this.router.navigate(['cars']);
+  }
 }
