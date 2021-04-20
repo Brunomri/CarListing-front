@@ -5,6 +5,7 @@ import {CarsReadComponent} from './components/views/cars/cars-read/cars-read.com
 import {CarsCreateComponent} from './components/views/cars/cars-create/cars-create.component';
 import {CarsDeleteComponent} from './components/views/cars/cars-delete/cars-delete.component';
 import {CarsUpdateComponent} from './components/views/cars/cars-update/cars-update.component';
+import {UsersReadAllComponent} from './components/views/users/users-read-all/users-read-all.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'cars/update/:carId',
     component: CarsUpdateComponent
+  },
+  {
+    path: 'users',
+    component: UsersReadAllComponent
   }
 ];
 

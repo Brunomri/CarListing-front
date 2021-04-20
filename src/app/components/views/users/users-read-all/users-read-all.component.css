@@ -1,0 +1,47 @@
+.content {
+  width: 90%;
+  margin: 1.4rem auto auto auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title h1 {
+  font-size: 2rem;
+  /*color: silver;*/
+  /*font-weight: 500;*/
+  font-family: 'Dosis', sans-serif;
+}
+
+.mat-stroked-button {
+  margin-bottom: .8rem;
+  background-color: white;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.2rem;
+  border: 2px solid silver;
+  transition-duration: 0.4s;
+}
+
+.mat-stroked-button:hover {
+  background-color: silver;
+}
+
+.table {
+  width: 100%;
+}
+
+.edit {
+  color: darkseagreen;
+}
+
+.delete {
+  color: indianred;
+  margin-left: .5rem;
+}
+
+.mat-header {
+  width: 5rem;
+}
