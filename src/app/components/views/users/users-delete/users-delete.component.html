@@ -1,0 +1,37 @@
+<form action="">
+  <h1>Delete user</h1>
+
+  <mat-form-field class="form">
+    <mat-label>Username</mat-label>
+    <label>
+      <input matInput [(ngModel)]="user.username" type="text" name="username" disabled>
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Password</mat-label>
+    <label>
+      <input matInput [(ngModel)]="user.password" type="text" name="password" disabled>
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Display Name</mat-label>
+    <label>
+      <input matInput [(ngModel)]="user.displayName" type="text" name="displayName" disabled>
+    </label>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Contact</mat-label>
+    <label>
+      <input matInput [(ngModel)]="user.contact" type="text" name="contact" disabled>
+    </label>
+  </mat-form-field>
+
+  <div class="buttons">
+    <button (click)="deleteUser()" class="mat-elevation-z8" mat-stroked-button color="primary">Delete</button>
+    <button (click)="cancelDelete()" class="mat-elevation-z8" mat-stroked-button color="warn">Cancel</button>
+  </div>
+
+</form>
