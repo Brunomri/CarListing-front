@@ -20,9 +20,20 @@ export class UsersService {
     return this.http.get<UsersModel[]>(url);
   }
 
+  findUserById(userId: number): Observable<UsersModel> {
+    console.log('userId = ' + userId);
+    const url = `${this.baseUrl}/users/${userId}`;
+    return this.http.get<UsersModel>(url);
+  }
+
   createUser(user: UsersModel): Observable<UsersModel> {
     const url = `${this.baseUrl}/users/1`;
     return this.http.post<UsersModel>(url, user);
+  }
+
+  updateUser(user: UsersModel): Observable<void> {
+    const url = `${this.baseUrl}/users/${user.userId}`;
+    return this.http.put<void>(url, user);
   }
 
   message(str: string): void {

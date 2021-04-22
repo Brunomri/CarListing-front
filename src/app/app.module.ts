@@ -27,6 +27,7 @@ import { CarsDeleteComponent } from './components/views/cars/cars-delete/cars-de
 import { CarsUpdateComponent } from './components/views/cars/cars-update/cars-update.component';
 import { UsersReadAllComponent } from './components/views/users/users-read-all/users-read-all.component';
 import { UsersCreateComponent } from './components/views/users/users-create/users-create.component';
+import { UsersUpdateComponent } from './components/views/users/users-update/users-update.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { UsersCreateComponent } from './components/views/users/users-create/user
     CarsDeleteComponent,
     CarsUpdateComponent,
     UsersReadAllComponent,
-    UsersCreateComponent
+    UsersCreateComponent,
+    UsersUpdateComponent
   ],
   imports: [
     BrowserModule,
