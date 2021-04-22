@@ -1,0 +1,41 @@
+<form action="">
+  <h1>Update user</h1>
+
+  <mat-form-field class="form">
+    <mat-label>Username</mat-label>
+    <label>
+      <input matInput [formControl]="username" required [(ngModel)]="user.username" type="text" name="username" placeholder="Username">
+    </label>
+    <mat-error *ngIf="username.invalid">{{ validateInput() }}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Password</mat-label>
+    <label>
+      <input matInput [formControl]="password" required [(ngModel)]="user.password" type="text" name="password" placeholder="Password">
+    </label>
+    <mat-error *ngIf="password.invalid">{{ validateInput() }}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Display Name</mat-label>
+    <label>
+      <input matInput [formControl]="displayName" required [(ngModel)]="user.displayName" type="text" name="displayName" placeholder="Display Name">
+    </label>
+    <mat-error *ngIf="displayName.invalid">{{ validateInput() }}</mat-error>
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label>Contact</mat-label>
+    <label>
+      <input matInput [formControl]="contact" required [(ngModel)]="user.contact" type="text" name="contact" placeholder="Contact">
+    </label>
+    <mat-error *ngIf="contact.invalid">{{ validateInput() }}</mat-error>
+  </mat-form-field>
+
+  <div class="buttons">
+    <button [disabled]="validateInput() //noinspection InvalidExpressionResultType" (click)="updateUser()" class="mat-elevation-z8" mat-stroked-button color="primary">Update</button>
+    <button (click)="cancelUpdate()" class="mat-elevation-z8" mat-stroked-button color="warn">Cancel</button>
+  </div>
+
+</form>
