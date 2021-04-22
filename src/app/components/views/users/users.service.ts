@@ -36,6 +36,11 @@ export class UsersService {
     return this.http.put<void>(url, user);
   }
 
+  deleteUser(userId: number): Observable<void> {
+    const url = `${this.baseUrl}/users/${userId}`;
+    return this.http.delete<void>(url);
+  }
+
   message(str: string): void {
     this._snack.open(`${str}`, 'OK', {
       horizontalPosition: 'end',
