@@ -25,7 +25,8 @@ export class UsersCreateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  validateInput(): string {
+  // tslint:disable-next-line:typedef
+  validateInput() {
     if (this.username.invalid) {
       return 'Username must not be empty!';
     }
@@ -38,6 +39,7 @@ export class UsersCreateComponent implements OnInit {
     if (this.contact.invalid) {
       return 'Contact must not be empty!';
     }
+    return false;
   }
 
   createUser(): void {

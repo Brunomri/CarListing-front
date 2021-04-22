@@ -4,7 +4,7 @@
   <mat-form-field class="form">
     <mat-label>Username</mat-label>
     <label>
-      <input matInput [formControl]="username" [(ngModel)]="user.username" type="text" name="username" placeholder="Username">
+      <input matInput [formControl]="username" required [(ngModel)]="user.username" type="text" name="username" placeholder="Username">
     </label>
     <mat-error *ngIf="username.invalid">{{ validateInput() }}</mat-error>
   </mat-form-field>
@@ -12,7 +12,7 @@
   <mat-form-field class="form">
     <mat-label>Password</mat-label>
     <label>
-      <input matInput [formControl]="password" [(ngModel)]="user.password" type="text" name="password" placeholder="Password">
+      <input matInput [formControl]="password" required [(ngModel)]="user.password" type="text" name="password" placeholder="Password">
     </label>
     <mat-error *ngIf="password.invalid">{{ validateInput() }}</mat-error>
   </mat-form-field>
@@ -20,7 +20,7 @@
   <mat-form-field class="form">
     <mat-label>Display Name</mat-label>
     <label>
-      <input matInput [formControl]="displayName" [(ngModel)]="user.displayName" type="text" name="displayName" placeholder="Display Name">
+      <input matInput [formControl]="displayName" required [(ngModel)]="user.displayName" type="text" name="displayName" placeholder="Display Name">
     </label>
     <mat-error *ngIf="displayName.invalid">{{ validateInput() }}</mat-error>
   </mat-form-field>
@@ -28,13 +28,13 @@
   <mat-form-field class="form">
     <mat-label>Contact</mat-label>
     <label>
-      <input matInput [formControl]="contact" [(ngModel)]="user.contact" type="text" name="contact" placeholder="Contact">
+      <input matInput [formControl]="contact" required [(ngModel)]="user.contact" type="text" name="contact" placeholder="Contact">
     </label>
     <mat-error *ngIf="contact.invalid">{{ validateInput() }}</mat-error>
   </mat-form-field>
 
   <div class="buttons">
-    <button (click)="createUser()" class="mat-elevation-z8" mat-stroked-button color="primary">Create</button>
+    <button [disabled]="validateInput() //noinspection InvalidExpressionResultType" (click)="createUser()" class="mat-elevation-z8" mat-stroked-button color="primary">Create</button>
     <button (click)="cancelCreate()" class="mat-elevation-z8" mat-stroked-button color="warn">Cancel</button>
   </div>
 
