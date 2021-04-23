@@ -21,7 +21,7 @@ export class CarsReadComponent implements OnInit {
   }
 
   findAllCars(): void {
-    this.service.findAllCars().subscribe(response => {
+    this.service.findAllCars().subscribe((response) => {
       console.log('Showing all cars:');
       console.log(response);
       this.cars = response;
